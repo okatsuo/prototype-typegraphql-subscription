@@ -1,7 +1,7 @@
-import 'reflect-metadata'
 import { ApolloServer } from 'apollo-server'
-import { buildSchema, Field, Mutation, ObjectType, PubSub, Query, Resolver, Root, Subscription, PubSubEngine, Arg } from 'type-graphql'
 import { randomUUID } from 'crypto'
+import 'reflect-metadata'
+import { Arg, buildSchema, Field, Mutation, ObjectType, PubSub, PubSubEngine, Query, Resolver, Root, Subscription } from 'type-graphql'
 
 const topics = {
   newMessage: 'NEW_MESSAGE'
